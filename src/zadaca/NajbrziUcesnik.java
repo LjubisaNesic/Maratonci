@@ -5,6 +5,7 @@ package zadaca;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class NajbrziUcesnik {
@@ -27,7 +28,7 @@ public class NajbrziUcesnik {
 	}
 	System.out.println("Najbrzi ucesnik je " + najbrziUcesnik + " sa vremenom od " + najbrzeVrijeme + " minuta.");
 	inputFile.close();
-	}  catch (FileNotFoundException ex) {
+	}  catch (IOException ex) {
 	    System.out.println(ex.getMessage());
 	}
 	
